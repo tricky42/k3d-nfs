@@ -1,6 +1,7 @@
 # Prerequisites
 - K3D
 - Helm
+- kubectl
 
 # Test
 ``` shell
