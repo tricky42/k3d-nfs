@@ -1,0 +1,82 @@
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] main :MAIN :EVENT :nfs-ganesha Starting: Ganesha Version 2.8.2
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] nfs_set_param_from_conf :NFS STARTUP :EVENT :Configuration file successfully parsed
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] init_server_pkgs :NFS STARTUP :EVENT :Initializing ID Mapper.
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] init_server_pkgs :NFS STARTUP :EVENT :ID Mapper successfully initialized.
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] nfs_start_grace :STATE :EVENT :NFS Server Now IN GRACE, duration 90
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] claim_posix_filesystems :FSAL :CRIT :Could not stat directory for path /nonexistent
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] vfs_create_export :FSAL :CRIT :resolve_posix_filesystem(/nonexistent) returned No such file or directory (2)
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] mdcache_fsal_create_export :FSAL :MAJ :Failed to call create_export on underlying FSAL VFS
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] fsal_cfg_commit :CONFIG :CRIT :Could not create export for (/nonexistent) to (/nonexistent)
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] export_commit_common :CONFIG :CRIT :Export id 0 can only export "/" not (/nonexistent)
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] main :NFS STARTUP :WARN :No export entries found in configuration file !!!
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] config_errs_to_log :CONFIG :CRIT :Config File (/export/vfs.conf:28): 1 validation errors in block FSAL
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] config_errs_to_log :CONFIG :CRIT :Config File (/export/vfs.conf:28): Errors processing block (FSAL)
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] config_errs_to_log :CONFIG :CRIT :Config File (/export/vfs.conf:12): 1 validation errors in block EXPORT
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] config_errs_to_log :CONFIG :CRIT :Config File (/export/vfs.conf:12): Errors processing block (EXPORT)
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] nfs_Init_svc :DISP :CRIT :Cannot acquire credentials for principal nfs
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] nfs_Init_admin_thread :NFS CB :EVENT :Admin thread initialized
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] nfs_rpc_cb_init_ccache :NFS STARTUP :EVENT :Callback creds directory (/usr/local/var/run/ganesha) already exists
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] nfs_rpc_cb_init_ccache :NFS STARTUP :WARN :gssd_refresh_krb5_machine_credential failed (-1765328160:22)
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] nfs_Start_threads :THREAD :EVENT :Starting delayed executor.
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] nfs_Start_threads :THREAD :EVENT :gsh_dbusthread was started successfully
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] nfs_Start_threads :THREAD :EVENT :admin thread was started successfully
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] nfs_Start_threads :THREAD :EVENT :reaper thread was started successfully
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] nfs_Start_threads :THREAD :EVENT :General fridge was started successfully
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] nfs_start :NFS STARTUP :EVENT :-------------------------------------------------
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] nfs_start :NFS STARTUP :EVENT :             NFS SERVER INITIALIZED
+02/02/2021 11:42:25 : epoch 60193aa1 : nfs-0 : nfs-ganesha-22[main] nfs_start :NFS STARTUP :EVENT :-------------------------------------------------
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] main :MAIN :EVENT :nfs-ganesha Starting: Ganesha Version 2.8.2
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] nfs_set_param_from_conf :NFS STARTUP :EVENT :Configuration file successfully parsed
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] init_server_pkgs :NFS STARTUP :EVENT :Initializing ID Mapper.
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] init_server_pkgs :NFS STARTUP :EVENT :ID Mapper successfully initialized.
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] nfs_start_grace :STATE :EVENT :NFS Server Now IN GRACE, duration 90
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] claim_posix_filesystems :FSAL :CRIT :Could not stat directory for path /nonexistent
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] vfs_create_export :FSAL :CRIT :resolve_posix_filesystem(/nonexistent) returned No such file or directory (2)
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] mdcache_fsal_create_export :FSAL :MAJ :Failed to call create_export on underlying FSAL VFS
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] fsal_cfg_commit :CONFIG :CRIT :Could not create export for (/nonexistent) to (/nonexistent)
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] export_commit_common :CONFIG :CRIT :Export id 0 can only export "/" not (/nonexistent)
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] main :NFS STARTUP :WARN :No export entries found in configuration file !!!
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] config_errs_to_log :CONFIG :CRIT :Config File (/export/vfs.conf:28): 1 validation errors in block FSAL
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] config_errs_to_log :CONFIG :CRIT :Config File (/export/vfs.conf:28): Errors processing block (FSAL)
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] config_errs_to_log :CONFIG :CRIT :Config File (/export/vfs.conf:12): 1 validation errors in block EXPORT
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] config_errs_to_log :CONFIG :CRIT :Config File (/export/vfs.conf:12): Errors processing block (EXPORT)
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] nfs_Init_svc :DISP :CRIT :Cannot acquire credentials for principal nfs
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] nfs_Init_admin_thread :NFS CB :EVENT :Admin thread initialized
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] nfs_rpc_cb_init_ccache :NFS STARTUP :EVENT :Callback creds directory (/usr/local/var/run/ganesha) already exists
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] nfs_rpc_cb_init_ccache :NFS STARTUP :WARN :gssd_refresh_krb5_machine_credential failed (-1765328160:22)
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] nfs_Start_threads :THREAD :EVENT :Starting delayed executor.
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] nfs_Start_threads :THREAD :EVENT :gsh_dbusthread was started successfully
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] nfs_Start_threads :THREAD :EVENT :admin thread was started successfully
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] nfs_Start_threads :THREAD :EVENT :reaper thread was started successfully
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] nfs_Start_threads :THREAD :EVENT :General fridge was started successfully
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] nfs_start :NFS STARTUP :EVENT :-------------------------------------------------
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] nfs_start :NFS STARTUP :EVENT :             NFS SERVER INITIALIZED
+02/02/2021 11:44:54 : epoch 60193b36 : nfs-0 : nfs-ganesha-23[main] nfs_start :NFS STARTUP :EVENT :-------------------------------------------------
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] main :MAIN :EVENT :nfs-ganesha Starting: Ganesha Version 2.8.2
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] nfs_set_param_from_conf :NFS STARTUP :EVENT :Configuration file successfully parsed
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] init_server_pkgs :NFS STARTUP :EVENT :Initializing ID Mapper.
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] init_server_pkgs :NFS STARTUP :EVENT :ID Mapper successfully initialized.
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] nfs_start_grace :STATE :EVENT :NFS Server Now IN GRACE, duration 90
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] claim_posix_filesystems :FSAL :CRIT :Could not stat directory for path /nonexistent
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] vfs_create_export :FSAL :CRIT :resolve_posix_filesystem(/nonexistent) returned No such file or directory (2)
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] mdcache_fsal_create_export :FSAL :MAJ :Failed to call create_export on underlying FSAL VFS
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] fsal_cfg_commit :CONFIG :CRIT :Could not create export for (/nonexistent) to (/nonexistent)
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] export_commit_common :CONFIG :CRIT :Export id 0 can only export "/" not (/nonexistent)
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] main :NFS STARTUP :WARN :No export entries found in configuration file !!!
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] config_errs_to_log :CONFIG :CRIT :Config File (/export/vfs.conf:28): 1 validation errors in block FSAL
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] config_errs_to_log :CONFIG :CRIT :Config File (/export/vfs.conf:28): Errors processing block (FSAL)
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] config_errs_to_log :CONFIG :CRIT :Config File (/export/vfs.conf:12): 1 validation errors in block EXPORT
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] config_errs_to_log :CONFIG :CRIT :Config File (/export/vfs.conf:12): Errors processing block (EXPORT)
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] nfs_Init_svc :DISP :CRIT :Cannot acquire credentials for principal nfs
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] nfs_Init_admin_thread :NFS CB :EVENT :Admin thread initialized
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] nfs_rpc_cb_init_ccache :NFS STARTUP :EVENT :Callback creds directory (/usr/local/var/run/ganesha) already exists
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] nfs_rpc_cb_init_ccache :NFS STARTUP :WARN :gssd_refresh_krb5_machine_credential failed (-1765328160:22)
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] nfs_Start_threads :THREAD :EVENT :Starting delayed executor.
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] nfs_Start_threads :THREAD :EVENT :gsh_dbusthread was started successfully
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] nfs_Start_threads :THREAD :EVENT :admin thread was started successfully
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] nfs_Start_threads :THREAD :EVENT :reaper thread was started successfully
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] nfs_Start_threads :THREAD :EVENT :General fridge was started successfully
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] nfs_start :NFS STARTUP :EVENT :-------------------------------------------------
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] nfs_start :NFS STARTUP :EVENT :             NFS SERVER INITIALIZED
+02/02/2021 11:51:53 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[main] nfs_start :NFS STARTUP :EVENT :-------------------------------------------------
+02/02/2021 11:53:23 : epoch 60193cd9 : nfs-0 : nfs-ganesha-23[reaper] nfs_lift_grace_locked :STATE :EVENT :NFS Server Now NOT IN GRACE

@@ -1,0 +1,27 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: echo
+spec:
+  selector:
+    matchLabels:
+      app: echo
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: echo
+    spec:
+      volumes:
+        - name: nfs-mount
+          persistentVolumeClaim:
+            claimName: nfs-for-pods
+      containers:
+      - image: busybox
+        name: echo
+        volumeMounts:
+          - mountPath: "/data"
+            name: nfs-mount
+        command: ["ping", "127.0.0.1"]

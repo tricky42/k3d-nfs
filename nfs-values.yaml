@@ -1,0 +1,13 @@
+nameOverride: nfs
+persistence:
+  enabled: true
+  storageClass: "-"
+  size: 200Mi
+  accessMode: ReadWriteMany
+
+storageClass:
+  defaultClass: false
+  provisionerName: nfs
+
+nodeSelector:
+  kubernetes.io/hostname: k3d-nfs-test-server-0
