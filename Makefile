@@ -36,5 +36,5 @@ echo-delete:
 		kubectl delete -f ./deployment-echo.yaml
 
 .PHONY: all
-all: k3d-up nfs-deploy
+all: k3d-up nfs-deploy echo-deploy
  		

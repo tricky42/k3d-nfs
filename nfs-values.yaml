@@ -1,9 +1,9 @@
 nameOverride: nfs
 persistence:
   enabled: true
-  storageClass: "-"
+  storageClass: local-path
   size: 200Mi
-  accessMode: ReadWriteMany
+  accessMode: ReadWriteOnce
 
 storageClass:
   defaultClass: false

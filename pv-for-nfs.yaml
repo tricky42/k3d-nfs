@@ -1,15 +1,18 @@
+### Not used in current setup. This was part of an experiment which used the --volume parameter 
+### when creating the k3d cluster (you can see the output of the experiements in .k3d-volumes directory.
 ---
 apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: nfs-pv-0
 spec:
+  storageClassName: local-path
   capacity:
     storage: 200Mi
   accessModes:
     - ReadWriteMany
   hostPath:
-    path: /data
+    path: "/data"
   claimRef:
     namespace: default
     name: data-nfs-0

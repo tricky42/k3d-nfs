@@ -1,3 +1,5 @@
+### The PVC used by the sample deployment defined in 
+### 'deployment-echo.yaml'
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
