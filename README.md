@@ -4,8 +4,7 @@
 - kubectl
 
 # In Short
-I cant get `nfs-server-provisioner` to run in K3D and I dont understand why. When I deploy using the `local-path` provider from K3D to provide the PV for the NFS server, PVCs of storage class `nfs` can be provisioned (status: bound), but still pods trying to 
-mount the volume reference by the PVC `nfs-for-pods` are not starting up due to: 
+I cant get `nfs-server-provisioner` to run in K3D and I dont understand why. In this setup the `local-path` provider from K3D is used to provide the PV for the NFS server automatically through the PVC issued by the `nfs-server-provisioner`. PVCs of storage class `nfs` can be provisioned (status: bound), but still pods trying to mount volumes which reference a PVC of storageClass `nfs`(in this example the PVC `nfs-for-pods`) are not starting up due to: 
 ```
 MountVolume.SetUp failed for volume "pvc-52c0d57a-b285-45b6-b04c-41175604b0d0" : mount failed: exit status 255 Mounting command: mount Mounting arguments: -t nfs -o vers=3 10.43.192.199:/export/pvc-52c0d57a-b285-45b6-b04c-41175604b0d0 /var/lib/kubelet/pods/c9e21798-76ad-404d-b089-c9fff88e0a86/volumes/kubernetes.io~nfs/pvc-52c0d57a-b285-45b6-b04c-41175604b0d0 Output: mount: mounting 10.43.192.199:/export/pvc-52c0d57a-b285-45b6-b04c-41175604b0d0 on /var/lib/kubelet/pods/c9e21798-76ad-404d-b089-c9fff88e0a86/volumes/kubernetes.io~nfs/pvc-52c0d57a-b285-45b6-b04c-41175604b0d0 failed: Connection refused
 
