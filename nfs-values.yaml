@@ -8,6 +8,9 @@ persistence:
 storageClass:
   defaultClass: false
   provisionerName: nfs
+  mountOptions:
+    - tcp
+    - nfsvers=4.1
 
 nodeSelector:
   kubernetes.io/hostname: k3d-nfs-test-server-0
