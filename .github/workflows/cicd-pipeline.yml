@@ -23,4 +23,5 @@ jobs:
 
       - name: Spin up K3D and deploy test workload
         run: |
+          helm repo update
           make all
