@@ -23,5 +23,6 @@ jobs:
 
       - name: Spin up K3D and deploy test workload
         run: |
+          helm repo add stable https://charts.helm.sh/stable
           helm repo update
           make all
